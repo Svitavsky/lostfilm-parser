@@ -19,6 +19,8 @@ class Series extends Model
 
     public function scopeSearchByTitle(Builder $query, array $titles)
     {
+        $query->join('series_descriptions', 'series_descriptions.series_id', '=', 'series.id');
+
         foreach ($titles as $languageCode => $title) {
             $query->orWhere(function ($q) use ($title, $languageCode) {
                 $q->where('series_descriptions.language_code', $languageCode)
