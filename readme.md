@@ -1,7 +1,7 @@
 ## Описание
 
 Парсер свежих эпизодов сериалов с сайта LostFilm
-
+![Alt text](/public/interface.jpg?raw=true "Optional Title")
 ## Требования
 ```PHP 7.0 и выше```
 
