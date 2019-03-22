@@ -11,4 +11,6 @@ class EpisodeDescription extends Model
       'title',
       'release_date'
     ];
+
+    public $dates = ['release_date'];
 }
