@@ -43,7 +43,8 @@ class Episode extends Model
     public function scopeIndex(Builder $query, Request $request)
     {
         $query
-            ->select('episodes.*')
+            ->distinct()
+            ->select('episodes.*', 'episode_descriptions.release_date')
             ->join('episode_descriptions', 'episode_descriptions.episode_id', '=', 'episodes.id')
             ->where('episode_descriptions.language_code', session('language_code', 'ru'))
             ->when($request->get('search'), function ($q) use ($request) {
