@@ -1,6 +1,8 @@
 ## Описание
 
 Парсер свежих эпизодов сериалов с сайта LostFilm
+<br>
+<br>
 ![Alt text](/public/interface.jpg?raw=true "Optional Title")
 ## Требования
 ```PHP 7.0 и выше```
@@ -20,7 +22,7 @@
 <br>
 В сборке используется пакет для парсинга HTML - [DiDom](https://github.com/Imangazaliev/DiDOM).
 
-Почему он? Из-за скорости его работы и простоты. Подробнее про скорость [здесь](https://github.com/Imangazaliev/DiDOM/wiki/Comparison-with-other-parsers-(1.0\)).
+Почему он? Из-за скорости его работы и простоты. Подробнее про скорость [здесь](https://github.com/Imangazaliev/DiDOM/wiki/Comparison-with-other-parsers-(1.0)).
 
 Также добавлен пакет [debugbar](https://github.com/barryvdh/laravel-debugbar) для проверки скорости работы сайта и запросов. Включается в ```.env``` файле с помощью ```APP_DEBUG=true```
 
