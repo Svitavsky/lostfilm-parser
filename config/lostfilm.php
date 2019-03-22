@@ -35,5 +35,5 @@ return [
     | Enable SphinxSearch for searching episodes
     |--------------------------------------------------------------------------
     */
-    'use_sphinx_search' => false,
+    'enable_sphinx_search' => false,
 ];

@@ -24,6 +24,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        // Пример запуска скрипта через cron.
+        // $schedule->command('parse:lostfilm')->hourly();
     }
 
     /**
